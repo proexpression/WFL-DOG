@@ -7,6 +7,7 @@
 
 <body>
 
+	<form action="/action_page.php">
 
 <p>WFL</p>
 
@@ -17,33 +18,41 @@ Agents
   <input type="button" onclick="checkAllLdaps()" value="Check All ldaps"> 
   <input type="button" onclick="uncheckAllLdaps()" value="Uncheck All ldaps"><br>
 
-<input type="checkbox" class="ldap" value="OR asignee:vladyslavf">vladyslavf<br>
-<input type="checkbox" class="ldap" name="ldap" value="OR asignee:sgnatenko">sgnatenko<br> <br>
+<input type="checkbox" class="ldap" name="coffee" value="OR asignee:vladyslavf">vladyslavf<br>
+<input type="checkbox" class="ldap" name="coffee" value="OR asignee:sgnatenko">sgnatenko<br> <br>
 
 
- <br> <br>
+ <br>
 
   Status
 
   <br>
   <input type="button" onclick="uncheckAllStat()" value="Uncheck All Statuses"> 
   <br>
-
-  <input type="checkbox" class="status" name="status" value="status:assigned">assigned<br>
-  <input type="checkbox" class="status" name="status" value="status:consult">in consult<br>
-  <input type="checkbox" class="status" name="status" value="status:need_info">need info<br><br>
-
+  <input type="checkbox" class="status" name="coffee" value="status:assigned">assigned<br>
+  <input type="checkbox" class="status" name="coffee" value="status:consult">in consult<br>
+  <input type="checkbox" class="status" name="coffee" value="status:need_info">need info<br><br>
 
 
+Pools
+<br>
+<input type="button" onclick="checkAllPools()" value="Check All Pools"> 
+<input type="button" onclick="uncheckAllPools()" value="Uncheck All Pools"><br>
 
+<input type="checkbox" class="pool" name="coffee" value="OR pool:1873">HV RU <br>
+<input type="checkbox" class="pool" name="coffee" value="OR pool:1867">HV UA<br>
 </form>
-<input type="button" onclick="myFunction()"  value="Create string and copy"> 
-<input type="button" onclick="myFunction()"  value="Next ldap"> 
-<br> <br>
-<input type="text" id="string" size="50">
+<br>
 
-<br> <br>
-<button onclick="copyFunction()">Copy</button>
+  <input type="button" onclick="myFunction()" value="Create string and copy"> 
+  <button onclick="copyFunction()">Copy</button>
+<br>
+
+<input type="text" id="order" size="50">
+
+
+
+
 
 </body>
 </html>
